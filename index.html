@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meditation App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Meditation App</h1>
+      <div class="input">
+        <span>Select the Seconds</span>
+        <select name="" id="input">
+          <option value="5">5 Deep Breaths</option>
+          <option value="9">9 Deep Breaths</option>
+          <option value="12">12 Deep Breaths</option>
+        </select>
+      </div>
+
+      <!-- circle  -->
+
+      <div class="circle-wrap">
+        <div class="circle-outline"></div>
+        <div class="circle-progress"></div>
+      </div>
+      <p class="breaths">
+        Breaths remaining: <span class="breaths-text">5</span>
+      </p>
+      <p class="instructions">Are you ready to start breathing?</p>
+      <button class="start">Begin</button>
+      <audio id="myAudio">
+        <source src="relax.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+      <script src="app.js"></script>
+    </div>
+  </body>
+</html>
